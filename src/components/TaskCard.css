@@ -1,0 +1,61 @@
+.task-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  margin-bottom: 16px;
+  max-width: 350px;
+}
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.task-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+.badge {
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+}
+.priority-high {
+  background: #e53935;
+}
+.priority-medium {
+  background: #fbc02d;
+  color: #222;
+}
+.priority-low {
+  background: #43a047;
+}
+.priority-default {
+  background: #bdbdbd;
+}
+.task-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-card-assignee {
+  display: flex;
+  align-items: center;
+}
+.task-card-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+}
+.task-card-due-date {
+  font-size: 0.95rem;
+  color: #757575;
+}
