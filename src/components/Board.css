@@ -1,0 +1,12 @@
+.board-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 100vh;
+}
+.board {
+  flex: 1;
+  padding: 32px;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
