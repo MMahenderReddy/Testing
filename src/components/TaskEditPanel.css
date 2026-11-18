@@ -1,0 +1,25 @@
+.task-edit-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.15);
+  transition: right 0.3s cubic-bezier(0.4,0,0.2,1);
+  z-index: 1000;
+  padding: 32px 24px 24px 24px;
+  overflow-y: auto;
+}
+.task-edit-panel.open {
+  right: 0;
+}
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
