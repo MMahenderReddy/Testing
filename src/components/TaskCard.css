@@ -1,0 +1,12 @@
+.task-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.task-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
