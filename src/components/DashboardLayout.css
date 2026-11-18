@@ -1,0 +1,131 @@
+/* Dashboard Layout Styles */
+.dashboard-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f4f6fa;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1976d2;
+  color: #fff;
+  padding: 0 32px;
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  z-index: 10;
+}
+
+.dashboard-header-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.dashboard-logout-btn {
+  background: #fff;
+  color: #1976d2;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-logout-btn:hover {
+  background: #e3eafc;
+}
+
+.dashboard-main-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  min-height: 0;
+}
+
+.dashboard-sidebar {
+  width: 220px;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  padding: 24px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.dashboard-sidebar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1976d2;
+  padding: 0 24px 16px 24px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 16px;
+}
+
+.dashboard-sidebar nav ul {
+  list-style: none;
+  padding: 0 24px;
+  margin: 0;
+}
+.dashboard-sidebar nav ul li {
+  margin-bottom: 16px;
+}
+.dashboard-sidebar nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.dashboard-sidebar nav ul li a:hover {
+  color: #1976d2;
+}
+
+.dashboard-main-content {
+  flex: 1 1 0;
+  padding: 32px;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .dashboard-main-wrapper {
+    flex-direction: column;
+  }
+  .dashboard-sidebar {
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+    border-bottom: 1px solid #ececec;
+    box-shadow: none;
+    min-height: unset;
+  }
+  .dashboard-sidebar-title {
+    display: none;
+  }
+  .dashboard-sidebar nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 16px;
+    overflow-x: auto;
+  }
+  .dashboard-sidebar nav ul li {
+    margin: 0 16px 0 0;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 16px;
+  }
+  .dashboard-main-content {
+    padding: 16px 4px;
+  }
+  .dashboard-sidebar nav ul {
+    padding: 0 4px;
+  }
+}
