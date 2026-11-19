@@ -1,0 +1,27 @@
+.welcome-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  max-width: 420px;
+  font-family: inherit;
+}
+
+.welcome-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1976d2;
+}
+
+.welcome-info {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.welcome-card.error {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #fbc2c2;
+}
