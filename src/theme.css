@@ -1,0 +1,21 @@
+:root {
+  --header-bg: #fff;
+  --header-title: #222;
+  --toggle-color: #222;
+  --kanban-bg: #f4f6fa;
+  --kanban-col-bg: #fff;
+  --kanban-col-header: #222;
+  --kanban-col-border: #ececec;
+  --kanban-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+body[data-theme='dark'] {
+  --header-bg: #23272f;
+  --header-title: #f4f6fa;
+  --toggle-color: #fbc02d;
+  --kanban-bg: #181a20;
+  --kanban-col-bg: #23272f;
+  --kanban-col-header: #f4f6fa;
+  --kanban-col-border: #2c2f36;
+  --kanban-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
