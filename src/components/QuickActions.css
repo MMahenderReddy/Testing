@@ -1,0 +1,24 @@
+.quick-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  justify-content: flex-end;
+}
+
+.quick-action-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+}
+
+.quick-action-btn:hover, .quick-action-btn:focus {
+  background: #1565c0;
+  outline: none;
+}
